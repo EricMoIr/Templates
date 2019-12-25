@@ -1,0 +1,1 @@
+# Templates to start NodeJS projects
