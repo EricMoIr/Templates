@@ -1,0 +1,9 @@
+export const primaryColor = "rgb(52,58,64)";
+export const secondaryColor = "rgb(82,82,82)";
+export const primaryBackgroundColor = "rgb(242,242,242)";
+export const messagesColor = "rgb(230, 230, 230)";
+export const settingsIcon = "https://d1upk9eg1mmd8w.cloudfront.net/assets/settings.png";
+// export const primaryTextColor = "white";
+// export const secondaryTextColor = "black";
+// export const primaryButtonBgColor = "rgb(126, 106, 245)";
+// export const secondaryButtonBgColor = "white";

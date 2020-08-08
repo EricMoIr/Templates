@@ -1,0 +1,22 @@
+<h1>Soy la pagina de autenticacion de un canal</h1>
+<button id="authenticationBtn">Autenticar</button>
+<div id="content">No estoy autenticado</div>
+<script>
+    const content = document.querySelector("#content");
+    const btn = document.querySelector("#authenticationBtn");
+    btn.addEventListener("click", async () => {
+        content.textContent = "Autenticando...";
+        await wait(2000);
+        content.textContent = "Autenticado";
+        // await wait(500);
+        window.parent.postMessage({
+            type: "channelAuthentication"
+        }, "*");
+    });
+
+    function wait(ms) {
+        return new Promise((resolve) => {
+            setInterval(() => resolve(), ms);
+        });
+    }
+</script>
